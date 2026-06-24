@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCy3c4bz6n5H8nVBEf6LhAm3x_sjmTYLMg",
-  authDomain: "puntigianna.firebaseapp.com",
-  projectId: "puntigianna",
-  storageBucket: "puntigianna.firebasestorage.app",
-  messagingSenderId: "253672582551",
-  appId: "1:253672582551:web:410a45267cb67fd62068d2"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
